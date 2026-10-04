@@ -54,3 +54,59 @@ nav a {
 nav a:hover {
     color: #e9b949;
 }
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    background-image:
+        linear-gradient(
+            rgba(31, 78, 95, 0.70),
+            rgba(31, 78, 95, 0.70)
+        ),
+        url("images/Kigali2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.hero-label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.hero-label) {
+    max-width: 550px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e9b949;
+    color: #243238;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #d9a832;
+}
