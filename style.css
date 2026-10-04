@@ -301,3 +301,129 @@ footer {
     color: #d6e0e2;
     font-size: 12px;
 }
+
+/* ARTICLE PAGE */
+
+.full-article {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    max-width: 900px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #1f4e5f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.back-link:hover {
+    color: #e9b949;
+}
+
+.full-article > h1 {
+    color: #1f4e5f;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.article-info {
+    display: flex;
+    gap: 20px;
+    color: #68777d;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.article-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.article-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.article-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.article-content p {
+    color: #4d5b60;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.article-content h2 {
+    color: #1f4e5f;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 35px 0;
+    }
+
+    .full-article > h1 {
+        font-size: 36px;
+    }
+
+    .article-image {
+        height: 300px;
+    }
+
+    .article-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
